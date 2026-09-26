@@ -1,0 +1,22 @@
+[
+  {
+    "question": "Qual o horário de funcionamento?",
+    "answer": "Funcionamos de terça a domingo, das 18h às 23h30. Segundas-feiras estamos fechados."
+  },
+  {
+    "question": "Vocês fazem entrega?",
+    "answer": "Sim, entregamos em um raio de até 6km. A taxa de entrega é calculada pelo endereço e informada antes da confirmação do pedido."
+  },
+  {
+    "question": "Qual o tempo médio de entrega?",
+    "answer": "O tempo médio é de 40 a 60 minutos, podendo variar em dias de maior movimento."
+  },
+  {
+    "question": "Quais formas de pagamento vocês aceitam?",
+    "answer": "Aceitamos Pix, cartão de crédito/débito na entrega e dinheiro."
+  },
+  {
+    "question": "Vocês têm opção sem glúten ou vegana?",
+    "answer": "Temos massa sem glúten mediante consulta prévia e pizza de mussarela vegana com queijo vegetal. Avise ao montar o pedido."
+  }
+]

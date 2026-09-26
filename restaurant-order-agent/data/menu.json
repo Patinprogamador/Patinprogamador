@@ -1,0 +1,93 @@
+[
+  {
+    "id": "pizza_margherita_m",
+    "name": "Pizza Margherita (Média)",
+    "category": "Pizzas",
+    "description": "Molho de tomate, mussarela, manjericão fresco.",
+    "price": 42.90
+  },
+  {
+    "id": "pizza_margherita_g",
+    "name": "Pizza Margherita (Grande)",
+    "category": "Pizzas",
+    "description": "Molho de tomate, mussarela, manjericão fresco.",
+    "price": 58.90
+  },
+  {
+    "id": "pizza_calabresa_m",
+    "name": "Pizza Calabresa (Média)",
+    "category": "Pizzas",
+    "description": "Molho de tomate, mussarela, calabresa fatiada, cebola.",
+    "price": 44.90
+  },
+  {
+    "id": "pizza_calabresa_g",
+    "name": "Pizza Calabresa (Grande)",
+    "category": "Pizzas",
+    "description": "Molho de tomate, mussarela, calabresa fatiada, cebola.",
+    "price": 60.90
+  },
+  {
+    "id": "pizza_quatro_queijos_m",
+    "name": "Pizza Quatro Queijos (Média)",
+    "category": "Pizzas",
+    "description": "Mussarela, provolone, parmesão, gorgonzola.",
+    "price": 48.90
+  },
+  {
+    "id": "pizza_quatro_queijos_g",
+    "name": "Pizza Quatro Queijos (Grande)",
+    "category": "Pizzas",
+    "description": "Mussarela, provolone, parmesão, gorgonzola.",
+    "price": 64.90
+  },
+  {
+    "id": "pizza_frango_catupiry_m",
+    "name": "Pizza Frango com Catupiry (Média)",
+    "category": "Pizzas",
+    "description": "Frango desfiado, catupiry, mussarela.",
+    "price": 46.90
+  },
+  {
+    "id": "pizza_frango_catupiry_g",
+    "name": "Pizza Frango com Catupiry (Grande)",
+    "category": "Pizzas",
+    "description": "Frango desfiado, catupiry, mussarela.",
+    "price": 62.90
+  },
+  {
+    "id": "refrigerante_lata",
+    "name": "Refrigerante lata (350ml)",
+    "category": "Bebidas",
+    "description": "Coca-Cola, Guaraná ou Fanta.",
+    "price": 6.00
+  },
+  {
+    "id": "refrigerante_2l",
+    "name": "Refrigerante 2 litros",
+    "category": "Bebidas",
+    "description": "Coca-Cola, Guaraná ou Fanta.",
+    "price": 14.00
+  },
+  {
+    "id": "agua_mineral",
+    "name": "Água mineral (500ml)",
+    "category": "Bebidas",
+    "description": "Com ou sem gás.",
+    "price": 4.00
+  },
+  {
+    "id": "petit_gateau",
+    "name": "Petit Gâteau",
+    "category": "Sobremesas",
+    "description": "Bolo de chocolate quente com sorvete de creme.",
+    "price": 18.00
+  },
+  {
+    "id": "pudim",
+    "name": "Pudim de leite condensado",
+    "category": "Sobremesas",
+    "description": "Fatia individual.",
+    "price": 12.00
+  }
+]
