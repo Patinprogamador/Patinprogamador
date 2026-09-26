@@ -1,11 +1,11 @@
-"""A scripted, offline stand-in for the Anthropic client so agent-flow tests
-don't need ANTHROPIC_API_KEY or network access. You hand it a fixed sequence
+"""A scripted, offline stand-in for the Gemini client so agent-flow tests
+don't need GEMINI_API_KEY or network access. You hand it a fixed sequence
 of ModelTurns; it returns them one by one regardless of what the agent asks,
 same pattern used for the fake LLM provider in the ESG Risk Screener repo."""
 
 from __future__ import annotations
 
-from app.agent.llm_types import ModelTurn, TextBlock, ToolUseBlock
+from app.agent.llm_types import Message, ModelTurn, TextBlock, ToolUseBlock
 
 
 class FakeLLMClient:
@@ -13,7 +13,7 @@ class FakeLLMClient:
         self._turns = list(turns)
         self.calls: list[dict] = []
 
-    def create_turn(self, system: str, messages: list[dict], tools: list[dict]) -> ModelTurn:
+    def create_turn(self, system: str, messages: list[Message], tools: list[dict]) -> ModelTurn:
         self.calls.append({"system": system, "messages": messages, "tools": tools})
         if not self._turns:
             raise AssertionError("FakeLLMClient ran out of scripted turns")

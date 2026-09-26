@@ -1,5 +1,5 @@
 from app.agent.chat_agent import ChatAgent
-from tests.fake_claude import FakeLLMClient, text_turn, tool_turn
+from tests.fake_llm import FakeLLMClient, text_turn, tool_turn
 
 PHONE = "5511999999999"
 
@@ -83,8 +83,8 @@ def test_check_order_status_reports_latest_order(menu, faq, restaurant, order_st
     reply = agent.handle_message(PHONE, "Cadê meu pedido?")
 
     assert str(order.id) in reply
-    tool_result = session_store.get_or_create(PHONE).history[-2]["content"][0]
-    assert "recebido" in tool_result["content"]
+    tool_result = session_store.get_or_create(PHONE).history[-2].content[0]
+    assert "recebido" in tool_result.content
 
 
 def test_unknown_item_does_not_crash_agent(menu, faq, restaurant, order_store, session_store):

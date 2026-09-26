@@ -16,12 +16,31 @@ class ToolUseBlock:
     input: dict
 
 
-ContentBlock = Union[TextBlock, ToolUseBlock]
+@dataclass(frozen=True)
+class ToolResultBlock:
+    tool_use_id: str
+    name: str
+    content: str
+
+
+ContentBlock = Union[TextBlock, ToolUseBlock, ToolResultBlock]
+
+
+@dataclass
+class Message:
+    """One turn of conversation history, in a representation independent of
+    any specific LLM provider's wire format. `role` is "user" or "model"
+    (Gemini's own naming — chosen so the Gemini client needs no translation;
+    an alternative provider's client would map "model" to whatever it
+    expects, e.g. "assistant")."""
+
+    role: str
+    content: list[ContentBlock]
 
 
 @dataclass(frozen=True)
 class ModelTurn:
-    stop_reason: str  # "end_turn" | "tool_use" | other Anthropic stop reasons
+    stop_reason: str  # "end_turn" | "tool_use"
     content: list[ContentBlock]
 
     def text(self) -> str:
@@ -32,4 +51,4 @@ class ModelTurn:
 
 
 class LLMClient(Protocol):
-    def create_turn(self, system: str, messages: list[dict], tools: list[dict]) -> ModelTurn: ...
+    def create_turn(self, system: str, messages: list[Message], tools: list[dict]) -> ModelTurn: ...

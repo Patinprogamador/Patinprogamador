@@ -8,8 +8,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env", extra="ignore")
 
-    anthropic_api_key: str = ""
-    claude_model: str = "claude-sonnet-5"
+    gemini_api_key: str = ""
+    gemini_model: str = "gemini-2.5-flash"
 
     whatsapp_access_token: str = ""
     whatsapp_phone_number_id: str = ""

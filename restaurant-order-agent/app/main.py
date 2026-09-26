@@ -3,8 +3,8 @@ from __future__ import annotations
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import JSONResponse, PlainTextResponse
 
-from app.agent.anthropic_client import AnthropicLLMClient
 from app.agent.chat_agent import ChatAgent
+from app.agent.gemini_client import GeminiLLMClient
 from app.config import Settings, get_settings
 from app.domain.menu import Menu
 from app.domain.orders import OrderStore
@@ -28,7 +28,7 @@ def create_app(
             phone=settings.restaurant_phone,
         )
         order_store = OrderStore(settings.resolved_database_path())
-        llm_client = AnthropicLLMClient(settings.anthropic_api_key, settings.claude_model)
+        llm_client = GeminiLLMClient(settings.gemini_api_key, settings.gemini_model)
         chat_agent = ChatAgent(
             llm_client=llm_client,
             menu=menu,

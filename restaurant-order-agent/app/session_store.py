@@ -2,6 +2,8 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 
+from app.agent.llm_types import Message
+
 
 @dataclass
 class CartItem:
@@ -11,11 +13,11 @@ class CartItem:
 
 @dataclass
 class ConversationSession:
-    """Per-customer state kept between WhatsApp messages: the running Claude
+    """Per-customer state kept between WhatsApp messages: the running LLM
     message history (so the agent remembers the conversation) and the cart
     being assembled before it becomes a confirmed Order."""
 
-    history: list[dict] = field(default_factory=list)
+    history: list[Message] = field(default_factory=list)
     cart: dict[str, CartItem] = field(default_factory=dict)
 
     def add_to_cart(self, item_id: str, quantity: int) -> None:

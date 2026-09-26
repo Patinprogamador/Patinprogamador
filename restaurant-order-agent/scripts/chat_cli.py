@@ -1,7 +1,7 @@
 """Local terminal chat with the restaurant agent — no WhatsApp setup needed.
 
 Useful to test/demo the ordering flow while you don't have WhatsApp Cloud
-API credentials yet. Requires only ANTHROPIC_API_KEY to be set (in the
+API credentials yet. Requires only GEMINI_API_KEY to be set (in the
 environment or in a .env file at the project root).
 
 Usage:
@@ -15,8 +15,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from app.agent.anthropic_client import AnthropicLLMClient  # noqa: E402
 from app.agent.chat_agent import ChatAgent  # noqa: E402
+from app.agent.gemini_client import GeminiLLMClient  # noqa: E402
 from app.config import get_settings  # noqa: E402
 from app.domain.menu import Menu  # noqa: E402
 from app.domain.orders import OrderStore  # noqa: E402
@@ -28,8 +28,8 @@ CLI_CUSTOMER_PHONE = "cli-local-user"
 
 def main() -> None:
     settings = get_settings()
-    if not settings.anthropic_api_key:
-        print("Defina ANTHROPIC_API_KEY no ambiente ou em um arquivo .env antes de rodar.")
+    if not settings.gemini_api_key:
+        print("Defina GEMINI_API_KEY no ambiente ou em um arquivo .env antes de rodar.")
         raise SystemExit(1)
 
     menu = Menu.from_json_file(settings.resolved_menu_path())
@@ -40,7 +40,7 @@ def main() -> None:
         phone=settings.restaurant_phone,
     )
     order_store = OrderStore(settings.resolved_database_path())
-    llm_client = AnthropicLLMClient(settings.anthropic_api_key, settings.claude_model)
+    llm_client = GeminiLLMClient(settings.gemini_api_key, settings.gemini_model)
     agent = ChatAgent(llm_client, menu, faq, restaurant, order_store, SessionStore())
 
     print(f"Conversando com o agente de {restaurant.name}. Digite 'sair' para encerrar.\n")
