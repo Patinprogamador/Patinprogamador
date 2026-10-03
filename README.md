@@ -1,8 +1,8 @@
 <h1 align="center">Hi, I'm Akin Martins</h1>
 
 <p align="center">
-  <b>Junior Software Developer</b> — Python · Backend · AI-Assisted Development<br>
-  1st-year Computer Science @ FIAP (São Paulo, Brazil) · open to remote roles
+  <b>**Software Developer in training** — Python · AI & Prompt Engineering · Cybersecurity
+1st-year Computer Science @ FIAP (São Paulo, Brazil) · open to remote roles
 </p>
 
 <p align="center">
@@ -14,19 +14,23 @@
 
 ### About
 
-I build small, working software: Python backends, LLM-powered chatbots, automation
-scripts and simulators. Around 8 months of hands-on Python so far, most of it shipped
-as collaborative projects on GitHub with a 3-person university team. From 2025 to August 2026, I worked as an apprentice analyst in ESG & credit risk at ERM, balancing the job with my first year at FIAP. There I automated manual reporting processes and once screened around 1,200 companies in a single week.
+### About
 
-I'm looking for a junior / internship role where I can grow as an engineer — remote
-or hybrid, comfortable with US and EU time zones.
+I build small, working software: Python backends, LLM-powered chatbots, automation scripts and simulators. Around 8 months of hands-on Python so far, most of it shipped as collaborative projects on GitHub with a 3-person university team. From 2025 to August 2026, I worked as an apprentice analyst in ESG & credit risk at ERM, balancing the job with my first year at FIAP. There I automated manual reporting processes and once screened around 1,200 companies in a single week.
+
+Prompt engineering is a big part of my work: designing few-shot prompts, structured outputs and LLM pipelines, and building AI agents that automate research tasks. At FIAP I'm taking a Prompt Engineering & AI course where I'm developing an ESG risk triage system with LangChain, evolving from a chatbot to RAG and AI agents.
+
+I'm also studying cybersecurity, focusing on networks, Linux, security fundamentals and how to build and use AI systems securely.
+
+I'm looking for a junior / internship role where I can grow as an engineer — remote or hybrid, comfortable with US and EU time zones.
 
 - 🔭 Currently: 1st-year CS at FIAP · finishing Harvard's **CS50x**
-- 🛠️ Working with: Python, Flask, FastAPI, Groq / Gemini LLM APIs, SQLite, Pydantic, `pytest`, Git
+- 🛠️ Working with: Python, Flask, FastAPI, LangChain, Ollama, Groq / Gemini LLM APIs, SQLite, Pydantic, `pytest`, Git, PowerShell
+- 🤖 AI focus: prompt engineering, structured outputs, RAG, AI agents
+- 🔐 Exploring: cybersecurity fundamentals, networking, Linux, secure AI
 - 🌱 Learning: backend architecture, testing discipline, clean API design
 - 🌍 Languages: Portuguese (native), English (fluent), German (B1, Goethe), Mandarin (A2)
 - 📫 Reach me: **akinalexandre2006@gmail.com**
-
 ---
 
 ### Featured projects
