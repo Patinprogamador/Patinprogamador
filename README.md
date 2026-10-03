@@ -1,4 +1,4 @@
-<h1 align="center">Hi, I'm Akin Martins</h1>
+<h1 align="center">Hi, I'm Akinfemi Martins</h1>
 
 <p align="center">
   <b>Junior Software Developer</b> — Python · Backend · AI-Assisted Development<br>
