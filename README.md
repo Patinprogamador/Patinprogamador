@@ -16,9 +16,7 @@
 
 I build small, working software: Python backends, LLM-powered chatbots, automation
 scripts and simulators. Around 8 months of hands-on Python so far, most of it shipped
-as collaborative projects on GitHub with a 3-person university team. Before FIAP I
-spent ~1.5 years as an apprentice analyst (ESG & credit risk), where I automated
-manual reporting processes.
+as collaborative projects on GitHub with a 3-person university team. From 2025 to August 2026, I worked as an apprentice analyst in ESG & credit risk at ERM, balancing the job with my first year at FIAP. There I automated manual reporting processes and once screened around 1,200 companies in a single week.
 
 I'm looking for a junior / internship role where I can grow as an engineer — remote
 or hybrid, comfortable with US and EU time zones.
